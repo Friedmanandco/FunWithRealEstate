@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 	<meta charset="UTF-8">
 	<title>Fun with Real Estate</title>
 	<!-- Latest compiled and minified CSS -->
@@ -16,20 +18,77 @@
   	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="jumbotron" >
-				<h1 class="text-center">Fun With Real Estate</h1>
-			</div>
-		</div>
+	
 
 		<!-- welcome div -->
 		<div id="welcomeScreen" class="row">
-			<div class="col-md-12">
 			
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="jumbotron" >
+								<h1 class="text-center">Fun With Real Estate</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7">
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+							    <h3 class="panel-title">Search</h3>
+							  </div>
+							  <div class="panel-body">
+							   <form>
+								  <div class="form-group">
+								    <label for="addressId"> address</label>
+								    <input type="text" class="form-control" id="addressId" placeholder="123 nw 2nd st">
+								  </div>
+								  <div class="form-group">
+								    <label for="stateId"> State</label>
+								    <input type="text" class="form-control" id="stateId" placeholder="New York">
+								  </div>
+								  <div class="form-group">
+								    <label for=zipCode> ZipCode</label>
+								    <input type="text" class="form-control" id="zipCode" placeholder="10021">
+								  </div>
+								  
+									<button type="submit" class="btn btn-default">Submit</button>
+								</form>
+							  </div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+							    <h3 class="panel-title">Panel title</h3>
+							  </div>
+							  <div class="panel-body">
+							  	<table class="table">
+  									<tbody>
+	  									<tr>
+		  									<td>
+												<img src="http://via.placeholder.com/140x110" alt="img" class="img-thumbnail">			
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex totam quam ducimus blanditiis ipsam, doloremque vel quae rem quaerat hic perspiciatis, ab eum qui impedit beatae molestiae, ad libero ea.</p>		
+		  										
+		  									</td>	  										
+	  									</tr>
+  									
+  									</tbody>
+  								
+  								</table>
+
+							  </div>
+							</div>
+
+							
 
 
-			</div>
+
+
+						</div>
+
+					</div>
+				</div>
 		</div>
 		
 		<!-- homePage -->
@@ -51,15 +110,7 @@
 			 </div>
 		</div>
 
-		<!-- listings -->
-		<div id="Listing" class="row">
-			 <div class="col-md-12">
-			 	
-
-
-			 </div>
-			
-		</div>
+		
 
 
 
@@ -97,6 +148,21 @@
 				</form>
 			</div>
 		</div> -->
+
+
+	
+
+
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-messaging.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+
+
+<script type="text/javascript" src="assets/javascript/logic.js"></script>
 
 </body>
 </html>
