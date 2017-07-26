@@ -8,5 +8,10 @@
     -o-background-size: cover;
     background-size: cover;
 	color: white;
+	text-shadow:
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
 
 }
